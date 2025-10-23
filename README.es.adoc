@@ -1,5 +1,7 @@
 = rv-rails
 
+* Translation pending
+
 ++++
 <a href="/"><img src="https://img.shields.io/badge/english-%F0%9F%87%AC%F0%9F%87%A7-blue"></a>
 <!--<a href="README.es.adoc"><img src="https://img.shields.io/badge/espa%C3%B1ol-%F0%9F%87%AA%F0%9F%87%B8-yellow"></a>-->
