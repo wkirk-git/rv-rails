@@ -1,6 +1,6 @@
 = rv-rails
 
-Testing out the new rv package manager for ruby.
+Testing out the new link:https://github.com/spinel-coop/rv[rv package manager] for ruby.
 This uses it to install ruby in a slim debian container and install and run rails.
 
 (I'm only testing this on my mbp so it is very apple silicon centric)
