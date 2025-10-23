@@ -1,6 +1,6 @@
 = rv-rails
 
-* Translation Pending
+* (Translation Pending)
 
 ++++
 <a href="/"><img src="https://img.shields.io/badge/english-%F0%9F%87%AC%F0%9F%87%A7-blue"></a>
