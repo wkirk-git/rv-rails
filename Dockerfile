@@ -1,4 +1,8 @@
 FROM debian:trixie-20251020-slim
+LABEL maintainer="William Kirk wkirk-git@mailbox.org" \
+      org.opencontainers.image.authors="William Kirk wkirk-git@mailbox.org" \
+      description="This project https://github.com/wkirk-git/rv-rails demonstrates using the rv package manager to set up a Ruby development environment with Rails 8.1.0 in a slim Debian Trixie container." \
+      version="0.2.0"
 SHELL ["/bin/bash", "-exo", "pipefail",  "-c"]
 RUN apt-get update -y && \
 apt-get install --no-install-recommends -y \
