@@ -1,7 +1,13 @@
 FROM debian:trixie-20251020-slim
 SHELL ["/bin/bash", "-exo", "pipefail",  "-c"]
 RUN apt-get update -y && \
-apt-get install -y curl=8.14.1-2 xz-utils=5.8.1-1 make=4.4.1-2 gcc=4:14.2.0-1 git=1:2.47.3-0+deb13u1 libyaml-dev=0.2.5-2 && \
+apt-get install --no-install-recommends -y \
+curl=8.14.1-2 \
+xz-utils=5.8.1-1 \
+build-essential=12.12 \
+ca-certificates=20250419 \
+git=1:2.47.3-0+deb13u1 \
+libyaml-dev=0.2.5-2 && \
 rm -rf /var/lib/apt/lists/* && \
 useradd -ms /bin/bash rails
 USER rails
