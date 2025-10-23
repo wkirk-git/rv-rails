@@ -1,0 +1,23 @@
+= rv-rails
+
+Testing out the new rv package manager for ruby.
+This uses it to install ruby in a slim debian container and install and run rails.
+
+* Builds a slim debian trixie container
+* Installs rv
+* Sets up a not root rails user space
+* rv installs ruby 3.4.7
+* rv pins ruby 3.4.7
+* gem installs rails
+* Scaffolds a bare bones rails app to test functionality
+* Starts rails at launch
+
+Build on macos apple silicon
+```bash
+docker buildx build --platform linux/arm64 -t rv-rails .
+```
+
+Run
+```bash
+docker run -it -p 3000:3000 rv-rails
+```
