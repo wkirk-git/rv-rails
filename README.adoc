@@ -1,33 +1,43 @@
 = rv-rails
 
-Testing out the new link:https://github.com/spinel-coop/rv[rv package manager] for ruby.
-This uses it to install ruby in a slim debian container and install and run rails.
+++++
+<a href="/"><img src="https://img.shields.io/badge/english-%F0%9F%87%AC%F0%9F%87%A7-blue"></a>
+<!--<a href="README.es.adoc"><img src="https://img.shields.io/badge/espa%C3%B1ol-%F0%9F%87%AA%F0%9F%87%B8-yellow"></a>-->
+<!--<a href="README.it.adoc"><img src="https://img.shields.io/badge/italiano-%F0%9F%87%AE%F0%9F%87%B9-white"></a>-->
+++++
 
-(I'm only testing this on my mbp so it is very apple silicon centric)
+This project demonstrates using the link:https://github.com/spinel-coop/rv[rv package manager] to set up a Ruby development environment with Rails 8.1.0 in a slim Debian Trixie container.
 
-* Builds a slim debian trixie container
-* Installs rv
-* Sets up a not root rails user space
-* rv installs ruby 3.4.7
-* rv pins ruby 3.4.7
-* gem installs rails
-* Scaffolds a bare bones rails app to test functionality
-* Starts rails at launch
+== Features
 
-== Usage
+* Slim Debian Container: Built on Debian Trixie base
+* rv Package Manager: Installs and manages Ruby versions
+* Version Pinning: Pins Ruby 3.4.7 for consistent builds
+* Non-Root User: Secure container setup with dedicated user space
 
-You can use the Makefile targets of build and run or manually with the docker commands below
+== Container Workflow
 
-```bash
-make
+. Builds slim Debian Trixie container 
+. Installs rv package manager 
+. Sets up non-root user environment 
+. Installs and pins Ruby 3.4.7 using rv 
+. Installs Rails gem
+. Scaffolds a simple Rails app 
+. Starts the Rails server
+
+== Makefile Commands
+
+[source,bash]
+make build # Build multi-platform container 
+make run # Launch container (accessible at http://localhost:3000) 
+make shell # Open shell inside container
+
+== Quick Start
+
+Build and run
+
+[source,bash]
+make build 
 make run
-```
 
-```bash
-docker buildx build --platform linux/arm64 -t rv-rails .
-```
-
-Run
-```bash
-docker run -it -p 3000:3000 rv-rails
-```
+Access at http://localhost:3000
