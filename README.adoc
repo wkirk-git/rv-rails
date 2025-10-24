@@ -38,7 +38,7 @@ Build and run
 [source,bash]
 make build 
 make run
-# or using docker
+# or you can pull from dockerhub
 docker run -it -p 3000:3000 wkirk/rv-rails:0.2.0
 
 Access at http://localhost:3000
