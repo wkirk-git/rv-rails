@@ -25,4 +25,5 @@ rv ruby pin ruby-3.4.7 && \
 gem update --system 3.7.2 && \
 gem install rails --version 8.1.0 && \
 rails new app
+EXPOSE 3000
 ENTRYPOINT ["./app/bin/rails", "s", "-b", "0.0.0.0"]
