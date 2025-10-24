@@ -39,6 +39,6 @@ Build and run
 make build 
 make run
 # or using docker
-docker run wkirk/rv-rails:0.2.0
+docker run -it -p 3000:3000 wkirk/rv-rails:0.2.0
 
 Access at http://localhost:3000
