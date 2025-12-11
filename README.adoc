@@ -7,7 +7,7 @@
 <!--<a href="README.it.adoc"><img src="https://img.shields.io/badge/italiano-%F0%9F%87%AE%F0%9F%87%B9-white"></a>-->
 ++++
 
-This project demonstrates using the link:https://github.com/spinel-coop/rv[rv package manager] to set up a Ruby development environment with Rails 8.1.0 in a slim Debian Trixie container.
+This project demonstrates using the link:https://github.com/spinel-coop/rv[rv package manager] to set up a Ruby development environment with Rails 8.1.1 in a slim Debian Trixie container.
 
 == Features
 
